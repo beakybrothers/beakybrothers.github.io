@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-        <link href="https://fonts.googleapis.com/css?family=Amatic%20SC%3Ai%2C400" rel="stylesheet">
-        <title>Home</title>
-        <style>
-            .link {
-                color: inherit;
-                text-decoration: none;
-            }
-            
-            .horizline {
-                display: flex;
-                justify-content: space-between;
-                margin-left: 25%;
-                margin-right: 25%;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-            }
-            
-            .p-span1 {
-                text-align: center;
-                padding: 1rem;
-            }
-        </style>
-        <script>
-            function popupHelp() {
-                window.alert("It's simple! Even a kid can operate this site, just remember when you click \'Draw your own characters\' your kid can draw his or her characters!");
-            }
-        </script>
-    </head>
-    <body background="images/background.jpeg">
-        <section>
-            <h1 class="p-span1">
-                <span style="font-family: Amatic SC; font-weight: normal; font-size: 8rem; color: white;">The Beaky Brothers</span>
-            </h1>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Amatic%20SC%3Ai%2C400" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <script src="common.js"></script>
+    <title>Home</title>
+</head>
+
+<body background="images/background.jpeg">
+    <section>
+        <h1 class="p-span1">
+            <span style="font-family: Amatic SC; font-weight: normal; font-size: 8rem; color: white;">The Beaky
+                Brothers</span>
+        </h1>
+        <p class="p-span1">
+            <span
+                style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
+                <a class="link" href="about.html">Click HERE for information</a>
+            </span>
+        </p>
+        <div class="horizline">
             <p class="p-span1">
-                <span style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
-                    <a class="link" href="about.html">Click HERE for information</a>
+                <span
+                    style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
+                    <a class="link" href="drawing.html">Draw your own characters</a>
                 </span>
-            </p>                            
-            <div class="horizline">
-                <p class="p-span1">
-                    <span style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
-                        <a class="link" href="drawing.html">Draw your own characters</a>
-                    </span>
-                </p>
-                <p class="p-span1">
-                    <span style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
-                        <a class="link" href="stories.html">Stories</a>
-                    </span>
-                </p>
-                <p class="p-span1">
-                    <span style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
-                        <a class="link" href="extras.html">Extras</a>
-                    </span>
-                </p>
-                <p class="p-span1">
-                    <span style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
-                        <a class="link" href="#" onclick="popupHelp()">Help</a>
-                    </span>
-                </p>
-            </div>
-        </section>        
-        <footer>
-            <section>
-                <div style="text-align: center; color: white;">
-                    <small style="display: block;">&copy; Copyright 2019 Jake Morgan. The Beaky Brothers and all characters and stories on this site are copyright 2019 Jake Morgan. All rights reserved.</small>
-                </div>                                
-            </section>
-        </footer>                        
-    </body>
+            </p>
+            <p class="p-span1">
+                <span
+                    style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
+                    <a class="link" href="stories.html">Stories</a>
+                </span>
+            </p>
+            <p class="p-span1">
+                <span
+                    style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
+                    <a class="link" href="extras.html">Extras</a>
+                </span>
+            </p>
+            <p class="p-span1">
+                <span
+                    style="text-decoration: underline; color: white;font-family: Lato, sans-serif;font-size: 1rem; font-weight: 400;">
+                    <a class="link" href="#" onclick="popupHelp()">Help</a>
+                </span>
+            </p>
+        </div>
+    </section>
+    <footer w3-include-html="footer.html"></footer>
+    <script>includeHTML();</script> 
+</body>
+
 </html>
